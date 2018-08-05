@@ -1,0 +1,163 @@
+/* 
+
+write your code here
+
+*/
+
+@media print {
+	
+	.tm-sidebar, #about, .heading, .blocks, #ideas, section.tm-content-box {
+		display: none;
+	}
+
+	.tm-main-content {
+		margin: 0;
+		padding: 0;
+	}
+
+	.tm-banner {
+		height: 250px;
+	}
+
+	.pad 
+		.tm-section-title{
+			color: blue;
+			padding: 0;
+		}
+
+	.pad {
+		padding: 0;
+	}
+
+	.tm-content-box{
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.tm-team-description-container{
+		max-width: 580px;
+	}
+	
+}
+
+@media screen {
+
+	.box a img{
+		border-radius: 50%;
+		}
+
+	.box.box-bg h2:hover{
+		background-color: #31b0d5;
+		color: white;
+		font-weight: bold;
+	}
+
+	p:first-letter {
+		color: #76cdd7;
+		font-size: 30px;
+	}
+
+	.tm-sidebar, .tm-content-box {
+	    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+	}
+	
+	#home::before {
+		content: '';  
+		position: absolute;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 25px 110px 0 0;
+	    border-color: #31b0d5 transparent transparent transparent;
+	}
+
+	section::before{
+	    content: ''; 
+	    position: absolute; 
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 25px 110px 0 0;
+	    border-color: #31b0d5 transparent transparent transparent;
+	}
+
+	#tmCarousel
+		.tm-section-title{
+			color: gainsboro;
+			letter-spacing: 5px;
+		}
+
+	h2 + p {
+		font-style: italic;
+	}
+
+	section 
+		p {
+			line-height: 1.5;
+			text-indent: 25px;
+		}
+
+	.heading 
+		a:visited {
+	    	color: silver;
+	    	text-decoration: none;
+		}
+
+	.heading 
+		a:hover {
+		    color: #31b0d5;
+		    text-decoration: underline;
+		    text-decoration-style: double;
+		}
+
+	.heading
+		a.text::after {
+		    content: "New";
+		    color: red;
+		    font-size: 10px;
+		    vertical-align: super;
+		}
+
+	.blocks
+		.gallery-container
+			.box:nth-child(odd) {
+	    		background-color: gainsboro;
+			}
+
+	.blocks
+		.gallery-container
+			.box
+				p:first-letter{
+					color: black;
+				}
+
+	.blocks
+		.gallery-container
+			.box
+				p{
+					line-height: 1.5;
+					text-indent: 0;
+				}
+
+	.tm-sidebar
+		.tm-main-nav
+			li:not(:last-child) {
+		    	border-bottom: 1px dotted;
+			}
+
+
+	.contact-form input, .contact-form button {
+	    color: red;
+	}
+
+	.contact-form 
+		button:hover {
+	    background-color: #32b5de;
+		}
+
+	.mandatory-field::after {
+	    content: "*";
+	    color: red;
+	}
+}
